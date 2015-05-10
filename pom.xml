@@ -219,6 +219,24 @@
 					<targetJdk>1.7</targetJdk>
 				</configuration>
 			</plugin>
+			<!-- Need to fix exec plugin -->
+			<!-- <plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<id>my-execution</id>
+						<phase>package</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>ca.spring.mvc.agile.qa.Test</mainClass>
+				</configuration>
+			</plugin> -->
 		</plugins>
 	</build>
 	<reporting>
