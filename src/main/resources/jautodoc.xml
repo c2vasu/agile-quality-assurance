@@ -135,8 +135,8 @@
             <regex>.+</regex>
             <example>ExampleType</example>
             <text>/**
- * The ${e.getType().fu()} ${e}.
- * @author ${username}
+ * 
+ * @author ${user}
  */</text>
             <childTemplates/>
         </typeTemplate>
@@ -254,12 +254,13 @@
  */</text>
             <childTemplates/>
         </methodTemplate>
-        <methodTemplate name="Method.Default" useSignature="true" defaultTemplate="true" kind="3">
+        <methodTemplate name="Method.Default" useSignature="false" defaultTemplate="true" kind="3">
             <regex>.+</regex>
             <example>doSomething</example>
             <text>/**
+## Actually this is not used, because there
+## are templates for different return types
  * ${e.rsfu()}.
- * @author ${username}
  */</text>
             <childTemplates/>
         </methodTemplate>
@@ -323,9 +324,18 @@
             <childTemplates/>
         </exceptionTemplate>
     </templates>
-    <headerText>/*
- * Copyright (c) ${year} www.test.com. All rights reserved.
- * Creation Date : ${date}
+    <headerText>/**
+ * =================================================================================================================
+ * Copyright (c) ${year} by avivacanada.com. 
+ * Aviva Canada Insurance Limited. Registered Office (Head Office) Scarborough, 2200-2206 Eglinton Ave. East M1L 4S8.
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of AVIVA ("Confidential Information").
+ * You shall not disclose such Confidential Information and shall use it only in accordance with the terms of the
+ * license agreement you entered into with AVIVA.
+ * 
+ * Creation date : ${date}
+ * =================================================================================================================
  */</headerText>
     <packageDocText>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
 &lt;html&gt;
